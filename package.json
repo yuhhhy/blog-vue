@@ -1,0 +1,28 @@
+{
+  "name": "blog-vue",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "concurrently \"vite build\" \"node scripts/generatePosts.js\" \"node scripts/preprocess-md.mjs\"",
+    "preview": "vite preview",
+    "generate-posts": "node scripts/generatePosts.js",
+    "preprocess-md": "node scripts/preprocess-md.mjs"
+  },
+  "dependencies": {
+    "element-plus": "^2.9.7",
+    "gray-matter": "^4.0.3",
+    "markdown-it": "^14.1.0",
+    "markdown-it-toc-and-anchor": "^4.2.0",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "concurrently": "^9.1.2",
+    "sass": "^1.86.3",
+    "vite": "^6.2.0"
+  }
+}

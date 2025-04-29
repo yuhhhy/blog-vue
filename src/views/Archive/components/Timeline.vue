@@ -1,29 +1,40 @@
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, watch } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
 
 const route = useRoute()
 const postsByDate = ref([])
 const postsByTag = ref([])
 
-onMounted(async () => {
-    const response = await fetch('/data/posts.json')
-    postsByDate.value = await response.json()
+// 提取筛选逻辑为单独函数
+const filterPostsByTag = () => {
+    postsByTag.value = postsByDate.value.filter(post => {
+      return post.tags.includes(route.params.tagName)
+    })
+}
 
-    // 是否需要根据标签进行筛选
-    if(route.params.tagName){
-      postsByTag.value = postsByDate.value.filter(post => {
-          return post.tags.includes(route.params.tagName)
-      })
-    }
+// 页面挂载
+onMounted(async () => {
+
+  const response = await fetch('/data/posts.json')
+  postsByDate.value = await response.json()
+
+  if(route.params.tagName){
+    filterPostsByTag()
+  }
+})
+
+// 当前页面切换Tag
+watch(() => route.params.tagName, () => {
+  filterPostsByTag()
 })
 </script>
 
 <template>
   <div class="container">
-    <el-timeline style="max-width: 600px" class="timeline">
+    <el-timeline style="max-wipx" class="timeline">
       <el-timeline-item 
-        v-if="route.params" 
+        v-if="route.params.tagName" 
         v-for="item in postsByTag" 
         :timestamp="item.date" 
         type="primary" 

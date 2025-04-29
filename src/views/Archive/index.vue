@@ -1,13 +1,16 @@
 <script setup>
 import Sidebar from '@/components/Sidebar/index.vue'
+import TagList from './components/TagList.vue';
 </script>
 
-<template>
+<template>]
 <div class="archive-container">
     <div class="archive-main">
         <!-- 归档页面文章列表 -->
         <div class="archive-list">
-            <!-- 不同排序方式 -->
+            <!-- 归档页面标签列表 -->
+            <TagList></TagList>
+            <!-- 路由决定不同排序方式 -->
             <RouterView></RouterView>
         </div>
         <!-- 归档页面侧边栏 -->
@@ -30,6 +33,7 @@ import Sidebar from '@/components/Sidebar/index.vue'
             flex: 1;
             background-color: var(--white);
             border-radius: 15px;
+            padding: 20px 0;
         }
         @media (max-width: 768px) {
                 padding: 0;

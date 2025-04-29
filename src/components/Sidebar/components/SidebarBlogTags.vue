@@ -4,7 +4,12 @@
 
 <template>
     <div class="blog-tags">
-        <span class="tag" v-for="tag in tags" :key="tag">{{ tag }}</span>
+        <RouterLink 
+            v-for="tag in tags" 
+            :key="tag" 
+            :to="`/archive/${tag}`">
+            <span class="tag" >{{ tag }}</span>
+        </RouterLink>
     </div>
 </template>
 

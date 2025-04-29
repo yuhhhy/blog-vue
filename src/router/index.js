@@ -22,15 +22,10 @@ const routes = [
                 component: () => import('@/views/Archive/index.vue'),
                 children: [
                     {
-                        path: '',
-                        name: 'ByDate',
-                        component: () => import('@/views/Archive/components/ByDate.vue'),
-                    },
-                    {
-                        path: ':tagName',
-                        name: 'ByTag',
-                        component: () => import('@/views/Archive/components/ByTag.vue'),
-                    },
+                        path: ':tagName?',
+                        name: 'Timeline',
+                        component: () => import('@/views/Archive/components/Timeline.vue'),
+                    }
                 ]
             },
             {

@@ -1,24 +1,17 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-// const tags = ["Test", "Javascript", "测试"]
 const posts = ref([])
-const set = new Set()
 const tags = ref([])
 
 onMounted(async () => {
     const response = await fetch('/data/posts.json')
     posts.value = await response.json()
 
-    posts.value.forEach(post => {
-        post.tags.forEach(tag => {
-            set.add(tag)
-        })
-    })
-    tags.value = Array.from(set)
+    tags.value = [...new Set(
+        posts.value.flatMap(post => post.tags)
+    )]
+
 })
-
-
-
 </script>
 
 <template>

@@ -8,7 +8,6 @@ tags: ["Test", "测试", "Markdown"]
 wordCount: 1002
 link: "/blog/2"
 ---
-@[TOC]
 
 # Welcome to Leanote! 欢迎来到Leanote!
  

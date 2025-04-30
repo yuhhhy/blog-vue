@@ -1,7 +1,6 @@
 <script setup>
 import Tag from '@/components/Tag/index.vue'
 import tagList from '@/data/tagList.js'
-
 </script>
 
 <template>

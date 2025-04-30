@@ -8,7 +8,6 @@ tags: ["Web", "互联网", "浏览器"]
 wordCount: 4032
 link: "/blog/1"
 ---
-@[TOC]
 
 ## 前 Web 时代
 

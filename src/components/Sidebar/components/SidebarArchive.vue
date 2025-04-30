@@ -1,5 +1,4 @@
 <script setup>
-// 归档相关代码
 </script>
 
 <template>

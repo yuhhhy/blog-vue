@@ -8,7 +8,6 @@ tags: ["Test", "测试"]
 wordCount: 832
 link: "/blog/3"
 ---
-@[TOC]
 
 # 5. Markdown 扩展
  

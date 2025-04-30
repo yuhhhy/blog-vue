@@ -4,7 +4,7 @@
 <template>
     <div class="sidebar-author">
         <div class="author-avatar">
-            <img src="https://avatars.githubusercontent.com/u/148607309?v=4" alt="my avatar">
+            <img src="@/assets/images/avatar.png" alt="my avatar">
         </div>
         <span id="author-name">一曝十寒</span>
         <span id="author-words">你好！我叫一曝十寒，欢迎来到我的博客！！！</span>

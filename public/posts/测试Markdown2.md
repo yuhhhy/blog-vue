@@ -1,12 +1,9 @@
 ---
-id: 2
 title: "测试Markdown2"
 author: "一曝十寒"
 coverImage: "/images/browser.jpg"
 date: "2025-04-22"
 tags: ["Test", "测试", "Markdown"]
-wordCount: 1002
-link: "/blog/2"
 ---
 
 # Welcome to Leanote! 欢迎来到Leanote!

@@ -1,18 +1,17 @@
 [
   {
-    "id": 4,
-    "title": "测试20250428",
+    "title": "字数统计",
     "author": "一曝十寒",
     "coverImage": "/images/central-park.jpg",
-    "date": "2025-04-28",
+    "date": "2025-05-01",
     "tags": [
       "Javascript"
     ],
-    "wordCount": 100,
-    "link": "/blog/4"
+    "id": 1,
+    "link": "/blog/1",
+    "wordCount": 28
   },
   {
-    "id": 3,
     "title": "测试Markdown3",
     "author": "一曝十寒",
     "coverImage": "/images/shanshui.jpg",
@@ -21,11 +20,11 @@
       "Test",
       "测试"
     ],
-    "wordCount": 832,
-    "link": "/blog/3"
+    "id": 3,
+    "link": "/blog/3",
+    "wordCount": 940
   },
   {
-    "id": 1,
     "title": "Web 时代的前因后果",
     "author": "一曝十寒",
     "coverImage": "/images/browser.jpg",
@@ -35,11 +34,11 @@
       "互联网",
       "浏览器"
     ],
-    "wordCount": 4032,
-    "link": "/blog/1"
+    "id": 0,
+    "link": "/blog/0",
+    "wordCount": 2725
   },
   {
-    "id": 2,
     "title": "测试Markdown2",
     "author": "一曝十寒",
     "coverImage": "/images/browser.jpg",
@@ -49,7 +48,8 @@
       "测试",
       "Markdown"
     ],
-    "wordCount": 1002,
-    "link": "/blog/2"
+    "id": 2,
+    "link": "/blog/2",
+    "wordCount": 329
   }
 ]

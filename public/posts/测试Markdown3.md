@@ -1,12 +1,9 @@
 ---
-id: 3
 title: "测试Markdown3"
 author: "一曝十寒"
 coverImage: "/images/shanshui.jpg"
 date: "2025-04-24"
 tags: ["Test", "测试"]
-wordCount: 832
-link: "/blog/3"
 ---
 
 # 5. Markdown 扩展

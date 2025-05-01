@@ -1,4 +1,3 @@
-@[TOC]
 
 # Welcome to Leanote! 欢迎来到Leanote!
  

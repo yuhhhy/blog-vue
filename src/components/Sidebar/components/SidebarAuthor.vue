@@ -40,6 +40,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        box-shadow: 0 0 10px var(--grape);
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 0.4s;
+        }
 
         img {
             width: 100%;

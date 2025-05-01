@@ -1,12 +1,9 @@
 ---
-id: 1
 title: "Web 时代的前因后果"
 author: "一曝十寒"
 coverImage: "/images/browser.jpg"
 date: "2025-04-23"
 tags: ["Web", "互联网", "浏览器"]
-wordCount: 4032
-link: "/blog/1"
 ---
 
 ## 前 Web 时代

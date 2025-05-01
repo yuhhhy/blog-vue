@@ -1,4 +1,3 @@
-@[TOC]
 
 # 5. Markdown 扩展
  

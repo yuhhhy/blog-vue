@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "concurrently \"vite build\" \"node scripts/generatePosts.js\" \"node scripts/preprocess-md.mjs\"",
+    "build": "concurrently \"vite build\" \"node scripts/generate-posts.js\" \"node scripts/preprocess-md.mjs\"",
     "preview": "vite preview",
-    "generate-posts": "node scripts/generatePosts.js",
+    "generate-posts": "node scripts/generate-posts.js",
     "preprocess-md": "node scripts/preprocess-md.mjs"
   },
   "dependencies": {

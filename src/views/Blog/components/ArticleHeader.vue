@@ -1,5 +1,6 @@
 <script setup>
 defineProps(['blogData'])
+
 </script>
 
 <template>

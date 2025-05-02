@@ -26,28 +26,32 @@ const posts = files.map(file => {
   if (!data.link) data.link = `/blog/${data.id}`
   // 字数统计
   if (!data.wordCount){
-    let iTotal = 0; // 汉字数
-    let eTotal = 0; // 字母数
-    let wTotal = 0; // 英文单词数
-    let nTotal = 0; // 数字数
-    let sTotal = 0; // 空格数
-    let oTotal = 0; // 其他字符数
-    let str = content;
+    let iTotal = 0 // 汉字数
+    let eTotal = 0 // 字母数
+    let nTotal = 0 // 数字数
+    let sTotal = 0 // 空格数
+    let oTotal = 0 // 其他字符数
+    let str = content
     for (let i = 0; i < str.length; i++) {
-      let c = str.charAt(i);
-      if (/^[\u4e00-\u9fcb]$/.test(c)) { // 匹配中文字符
-        iTotal++;
-      } else if (/^[a-zA-Z]$/.test(c)) { // 匹配英文字符
-        eTotal++;
-      } else if (/^[0-9]$/.test(c)) { // 匹配数字
-        nTotal++;
-      } else if (/^\s$/.test(c)) { // 匹配空白符
-        sTotal++;
+      let c = str.charAt(i)
+      if (/[\u4e00-\u9fa5]/.test(c)) { // 匹配中文字符
+        iTotal++
+      } else if (/[a-zA-Z]/.test(c)) { // 匹配英文字符
+        eTotal++
+      } else if (/[0-9]/.test(c)) { // 匹配数字
+        nTotal++
+      } else if (/\s+/.test(c)) { // 匹配空白符
+        sTotal++
       } else { // 匹配标点和其他字符
-        oTotal++;
+        oTotal++
       }
     }
-    wTotal = str.split(/\s+/).filter(word => word.match(/^[a-zA-Z]+$/)).length
+    let wTotal = 0 // 英文单词数
+    const segmenter = new Intl.Segmenter('en', { granularity: 'word' })
+    const segments = Array.from(segmenter.segment(str))
+    const words = segments.filter(s => s.isWordLike).map(s => s.segment)
+    wTotal = words.filter(word => word.match(/^[a-zA-Z]+$/)).length
+
     data.wordCount = str.length - eTotal + wTotal - sTotal
   } 
   return data

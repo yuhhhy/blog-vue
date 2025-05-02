@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "concurrently \"vite build\" \"node scripts/generate-posts.js\" \"node scripts/preprocess-md.mjs\"",
+    "build": "concurrently \"vite build\" \"node scripts/generate-posts.js\" \"node scripts/preprocess-md.js\"",
     "preview": "vite preview",
     "generate-posts": "node scripts/generate-posts.js",
-    "preprocess-md": "node scripts/preprocess-md.mjs"
+    "preprocess-md": "node scripts/preprocess-md.js"
   },
   "dependencies": {
     "element-plus": "^2.9.7",

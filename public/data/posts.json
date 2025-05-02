@@ -1,55 +1,28 @@
 [
   {
-    "title": "字数统计",
+    "title": "项目开发中遇到的前端字数统计问题",
     "author": "一曝十寒",
-    "coverImage": "/images/central-park.jpg",
-    "date": "2025-05-01",
+    "coverImage": "/images/emoji.png",
+    "date": "2025-05-02",
     "tags": [
-      "Javascript"
+      "JavaScript",
+      "前端"
     ],
     "id": 1,
     "link": "/blog/1",
-    "wordCount": 28
+    "wordCount": 1668
   },
   {
-    "title": "测试Markdown3",
+    "title": "关于 Web 与浏览器，你未了解的历史",
     "author": "一曝十寒",
-    "coverImage": "/images/shanshui.jpg",
-    "date": "2025-04-24",
-    "tags": [
-      "Test",
-      "测试"
-    ],
-    "id": 3,
-    "link": "/blog/3",
-    "wordCount": 940
-  },
-  {
-    "title": "Web 时代的前因后果",
-    "author": "一曝十寒",
-    "coverImage": "/images/browser.jpg",
+    "coverImage": "/images/browser_www.jpg",
     "date": "2025-04-23",
     "tags": [
       "Web",
-      "互联网",
       "浏览器"
     ],
     "id": 0,
     "link": "/blog/0",
-    "wordCount": 2725
-  },
-  {
-    "title": "测试Markdown2",
-    "author": "一曝十寒",
-    "coverImage": "/images/browser.jpg",
-    "date": "2025-04-22",
-    "tags": [
-      "Test",
-      "测试",
-      "Markdown"
-    ],
-    "id": 2,
-    "link": "/blog/2",
-    "wordCount": 329
+    "wordCount": 3018
   }
 ]

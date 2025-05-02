@@ -9,6 +9,10 @@
 
 我们都知道互联网（Internet）起源于1969年美国的阿帕网（ARPANET），它是美国国防部高级研究计划局（ARPA）与苏联在科学技术上发生“实验室冷战”的结果。美国国防部认为，如果仅有一个集中的军事指挥中心，万一这个中心被原苏联的核武器摧毁，全国的军事指挥将处于瘫痪状态，其后果不堪设想。因此有必要设计这样一个分散的指挥系统——它由一个个分散的指挥点组成，当部分指挥点被摧毁后其它点仍能正常工作，而这些分散的点又能通过某种形式的通讯网取得联系。
 
+![ARPANET](../images/arpanet.jpg)
+
+<p align=center>1971年9月的ARPANET</p>
+
 1969年，在美国西南部的四所大学的四台大型计算机通过 ARPANET 连接了起来。11月，操作员 Charley Kline 在加州大学洛杉矶分校的主机上，尝试向60公里外斯坦福研究所的主机发送「login」指令，但是系统在刚刚打出「l」和「o」两个字母后就宕机了，所以「lo」就成了第一条由互联网传输的信息。
 
 随着 ARPANET 的非军事用户越来越多，ARPANET 将其中的45个节点分离出去，形成了 NSFNET。后来，NSFNET 所覆盖的范围逐渐扩大到全美的大学和科研机构。可以说 NSFNET 和 ARPANET 就是美国乃至世界 Internet 的基础。
@@ -26,6 +30,18 @@ Web的核心是三个协议：
 *   统一资源标识符（Uniform Resource Identifier, URI），解决文档命名和寻址
 *   超文本传输协议（Hypertext Transfer Protocol, HTTP），解决文档的快速传输
 *   超文本标记语言（Hypertext Markup Language, HTML），解决超文本文档的表示
+
+![URL](../images/url.jpg)
+
+<p align=center>一个 URL 的组成部分</p>
+
+![HTTP](../images/http.jpg)
+
+<p align=center>HTTP 的拆分</p>
+
+![HTML](../images/html.png)
+
+<p align=center>HTML 元素剖析</p>
 
 
 与其说 Web 是一种技术，倒不如说它是对信息的存储和获取进行组织的一种思维方式。按照 Tim 的看法，这三个协议的重要性依次递减。这可能不符合日常 Web 用户的认识，因为 HTML、HTTP 是对用户可见的，而 URI 的重要性却不易察觉。但恰恰是 URI 的设计核心体现了 Tim 的设计指导哲学，即尽可能允许人们自由行事，自由地发布文档和互联文档。这可能是Web成功的最核心的原因。
@@ -46,7 +62,7 @@ Web的核心是三个协议：
 
 1990年，Tim Berners-Lee 开发了第一个浏览器 “WorldWideWeb”（后来为避免与万维网重名更名 Nexus），第一个万维网服务器“httpd”，和第一个网站 [info.cern.ch](https://link.zhihu.com/?target=http%3A//info.cern.ch/) 。
 
-![browser_www](../images/browser.jpg)
+![browser_www](../images/browser_www.jpg)
 
 他同时基于底层协议（TCP/IP）和早期网络协议（FTP、SMTP）创造了超文本传输协议（HTTP），根据超文本系统（NLS、HyperCard）和标记语言（GML、SGML）设计了超文本标记语言（HTML），根据文件系统的路径结构、域名系统（DNS）等设计了统一资源定位符（URL）。这些构成了如今 Web 与 浏览器必不可少的组成部分。
 
@@ -62,6 +78,10 @@ Web的核心是三个协议：
 
 1993年，伊利诺伊大学 NCSA（美国国家超算中心）的工作人员，开发的 Mosaic 浏览器，成为了第一个支持图片和图形界面的浏览器，在当时人气爆发地大受欢迎。
 
+
+![browser_mosaic](../images/borwser_MOSAIC.jpg)
+
+<p align=center>MOSAIC 浏览器界面，已经初具今天浏览器的雏形</p>
 
 但是这时的互联网服务大头依然是大学和科研机构，想要浏览器进一步传播，还需要商业资本的入场。
 

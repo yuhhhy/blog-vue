@@ -35,12 +35,18 @@ import TagList from './components/TagList.vue';
             border-radius: 15px;
             padding: 20px 0;
         }
-        @media (max-width: 768px) {
-                padding: 0;
-                flex-direction: column;
+    }
+}
+@media (max-width: 768px) {
+    .archive-container{
+        background-color: var(--white);
+        .archive-list{
+            padding: 0;
+            flex-direction: column;
             .archive-list {
-                    margin-right: 0;
-                    margin-bottom: 20px;
+                margin-right: 0;
+                margin-bottom: 20px;
+                border-radius: 0;
             }
         }
     }

@@ -2,7 +2,7 @@
 import Prism from 'prismjs'
 import 'prismjs/themes/prism.css'
 import '@/assets/font/prism-comment.scss'
-import { defineProps, onUpdated } from 'vue'
+import { onUpdated } from 'vue'
 
 defineProps(['htmlContent'])
 
@@ -77,6 +77,7 @@ onUpdated(() => {
         }
 
         code {
+            background: var(--light);
             padding: 0.2em 0.4em;
             border-radius: 3px;
         }

@@ -8,9 +8,9 @@ import { RouterLink } from 'vue-router';
                 <p>© 2025 一曝十寒. All rights reserved.</p>
         </div>
         <div class="right-footer">
-            <RouterLink to="/about">关于</RouterLink>
-            <RouterLink to="/archive">归档</RouterLink>
-            <a href="#">联系</a>
+            <RouterLink to="/about"><span>关于</span></RouterLink>
+            <RouterLink to="/archive"><span>归档</span></RouterLink>
+            <span id="contact">联系</span>
         </div>
     </div>
 </template>
@@ -30,14 +30,25 @@ import { RouterLink } from 'vue-router';
     .right-footer {
         display: flex;
         gap: 50px;
-    }
-
-    @media (max-width: 768px) {
-        padding: 0 20px;
-        .right-footer {
-            gap: 20px;
+        white-space: nowrap;
+        span:hover  {
+            color: var(--blue);
+        }
+        #contact {
+            cursor: pointer;
         }
     }
     
+}
+@media (max-width: 768px) {
+    .footer-info{
+        border-top: 1px solid var(--border-color);
+        padding: 0 20px;
+        .right-footer{
+            gap: 15px;
+            padding: 0;
+            white-space: nowrap;
+        }
+    }
 }
 </style>

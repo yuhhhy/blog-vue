@@ -1,7 +1,6 @@
 <script setup>
 import MarkdownIt from 'markdown-it'
 import markdownItTocAndAnchor from "markdown-it-toc-and-anchor"
-
 import Sidebar from '@/components/Sidebar/index.vue'
 import ArticleHeader from './components/ArticleHeader.vue'
 import ArticleContent from './components/ArticleContent.vue'
@@ -39,7 +38,6 @@ const fetchBlogContent = async () => {
       tocHtml.value = tocHtmlResult
     }
   })
-
   htmlContent.value = md.render(content.value)
 }
 

@@ -11,6 +11,7 @@
     "preprocess-md": "node scripts/preprocess-md.js"
   },
   "dependencies": {
+    "@vueuse/core": "^13.1.0",
     "element-plus": "^2.9.7",
     "gray-matter": "^4.0.3",
     "markdown-it": "^14.1.0",
@@ -22,6 +23,7 @@
     "@types/markdown-it": "^14.1.2",
     "@vitejs/plugin-vue": "^5.2.1",
     "concurrently": "^9.1.2",
+    "prismjs": "^1.30.0",
     "sass": "^1.86.3",
     "vite": "^6.2.0"
   }

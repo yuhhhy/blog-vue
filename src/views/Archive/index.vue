@@ -3,7 +3,7 @@ import Sidebar from '@/components/Sidebar/index.vue'
 import TagList from './components/TagList.vue';
 </script>
 
-<template>]
+<template>
 <div class="archive-container">
     <div class="archive-main">
         <!-- 归档页面文章列表 -->

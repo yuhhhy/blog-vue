@@ -1,5 +1,16 @@
 <script setup>
-    defineProps(['htmlContent'])
+import Prism from 'prismjs'
+import 'prismjs/themes/prism.css'
+import '@/assets/font/prism-comment.scss'
+import { defineProps, onUpdated } from 'vue'
+
+defineProps(['htmlContent'])
+
+onUpdated(() => {
+    document.querySelectorAll('pre code').forEach((block) => {
+        Prism.highlightElement(block)
+    })
+})
 </script>
 
 <template>
@@ -66,10 +77,8 @@
         }
 
         code {
-            background: var(--light);
             padding: 0.2em 0.4em;
             border-radius: 3px;
-            font-family: 'Courier New', monospace;
         }
 
         pre {
@@ -77,10 +86,6 @@
             padding: 1em;
             border-radius: 5px;
             overflow-x: auto;
-            code {
-                background: transparent;
-                padding: 0;
-            }
         }
 
         blockquote {

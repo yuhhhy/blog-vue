@@ -3,7 +3,7 @@ title: "关于 Web 与浏览器，你未了解的历史"
 author: "一曝十寒"
 coverImage: "/images/browser_www.jpg"
 date: "2025-04-23"
-tags: ["Web", "浏览器"]
+tags: ["浏览器"]
 ---
 
 ## 前 Web 时代

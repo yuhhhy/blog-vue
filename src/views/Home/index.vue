@@ -2,26 +2,12 @@
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 import Sidebar from '@/components/Sidebar/index.vue'
 
-const textParts = ref([
-  { left: "内容", middle: "形式", right:"重要" },
-  { left: "做到", middle: "说到", right:"困难" }
-])
-const currentIndex = ref(0)
-let intervalId = null
 const blogList = ref([])
 
 
 onMounted(async () => {
   const response = await fetch('/data/posts.json')
   blogList.value = await response.json()
-
-  intervalId = setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % textParts.value.length
-  }, 5000)
-})
-
-onBeforeUnmount(() => {
-  if (intervalId) clearInterval(intervalId)
 })
 </script>
 
@@ -29,15 +15,7 @@ onBeforeUnmount(() => {
     <div class="home-container">
         <!-- banner -->
         <div class="home-banner">
-            <div class="animated-text">
-                <transition name="slide" mode="out-in">
-                    <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].left }}</span>
-                </transition><span>比</span><transition name="slide" mode="out-in">
-                    <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].middle }}</span>
-                </transition><span>更</span><transition name="slide" mode="out-in">
-                    <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].right }}</span>
-                </transition>
-            </div>
+            <span>少说漂亮话，多做平凡事。</span>
         </div>
         <div class="home-content">
             <!-- 博客列表 -->
@@ -88,9 +66,6 @@ onBeforeUnmount(() => {
         @media (max-width: 768px) {
             height: 200px;
             font-size: 2rem;
-            .text-part {
-                margin: 0 -20px;
-            }
         }
     }
 
@@ -156,55 +131,6 @@ onBeforeUnmount(() => {
                 }
             }
         }
-    }
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s ease;
-}
-
-.fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-.home-banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-}
-.text-part {
-    display: inline-block;
-    min-width: 100px;
-    text-align: center;
-}
-.slide-enter-active {
-    animation: slideIn 0.5s ease-out;
-}
-.slide-leave-active {
-    animation: slideOut 0.5s ease-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slideOut {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(-30px);
-        opacity: 0;
     }
 }
 </style>

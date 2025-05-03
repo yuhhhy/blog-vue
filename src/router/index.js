@@ -45,7 +45,19 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     linkActiveClass: 'active', // 设置Vue Router模糊匹配类名
-    routes
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+            return savedPosition
+        } else if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth'
+            }
+        } else {
+            return { top: 0 }
+        }
+    }
 })
 
 export default router

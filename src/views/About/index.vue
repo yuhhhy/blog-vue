@@ -5,7 +5,7 @@ import ArticleContent from "../Blog/components/ArticleContent.vue";
 const htmlContent = `
             <h1>关于我</h1>
             <ul>
-                <li>大二生，来自江西，现在在长沙上学</li>
+                <li>大二生，来自江西，正在长沙上学</li>
                 <li>喜欢听音乐🎵、Vocaloid🎹，会弹一点点吉他🎸，研究一点作曲🎼</li>
                 <li>喜欢跑步🏃、打羽毛球🏸</li>
                 <li>喜欢买很多书📚，然而并没有读多少</li>

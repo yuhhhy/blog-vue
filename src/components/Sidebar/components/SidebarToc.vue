@@ -21,7 +21,7 @@ defineProps({
     top: 84px; // 必须指定top/left/right/bottom值
     height: fit-content;
     width: 100%;
-    padding: 20px 0;
+    padding-top: 20px;
     background-color: var(--white); // 背景颜色
     border-radius: 10px; // 圆角
     z-index: 1; // 层级

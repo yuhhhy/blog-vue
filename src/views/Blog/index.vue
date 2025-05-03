@@ -33,7 +33,11 @@ const fetchBlogContent = async () => {
   content.value = await response.text()
 
   // 生成文章Toc
-  const md = new MarkdownIt().use(markdownItTocAndAnchor, {
+  const md = new MarkdownIt({
+    html: true,
+    linkify: true,
+    typographer: true
+  }).use(markdownItTocAndAnchor, {
     tocCallback: function(tocMarkdown, tocArray, tocHtmlResult) {
       tocHtml.value = tocHtmlResult
     }
@@ -53,23 +57,20 @@ onMounted(async () => {
     <div class="blog-container">
         <!-- 博客头部banner区域 -->
         <div class="blog-header">
-            <div class="banner" :style="{ backgroundImage: `url(${blogData.coverImage})` }">
-            </div>
+            <div class="banner" :style="{ backgroundImage: `url(${blogData.coverImage})` }"></div>
             <!-- 遮罩层 -->
-            <div class="mask">
+            <div class="mask"></div>
+            <!-- 相关信息 -->
+            <div class="blog-title">{{ blogData.title }}</div>
+            <div class="blog-info">
+                <div class="blog-date">{{ blogData.date }}</div>
+                <div class="blog-author">作者 {{ blogData.author }}</div>
+                <div class="blog-word-count">字数 {{ blogData.wordCount }}</div>
             </div>
-                <!-- 相关信息 -->
-                <div class="blog-title">{{ blogData.title }}</div>
-                <div class="blog-info">
-                    <div class="blog-date">{{ blogData.date }}</div>
-                    <div class="blog-author">作者 {{ blogData.author }}</div>
-                    <div class="blog-word-count">字数 {{ blogData.wordCount }}</div>
-                </div>
         </div>
 
         <!-- 除了头部banner的主体和侧边栏区域 -->
         <div class="blog-main">
-
             <!-- 博客页面文章主体 -->
             <div class="blog-aritcle">
                 <!-- 文章上部分交互区域 -->
@@ -164,7 +165,7 @@ img {
         }
         .blog-sidebar {
             width: 300px;
-            min-width: 280px;
+            min-width: 260px;
             height: auto; // 高度自适应
             min-height: 100%; // 撑开.blog-sidebar
             display: flex;

@@ -32,9 +32,9 @@ onBeforeUnmount(() => {
             <div class="animated-text">
                 <transition name="slide" mode="out-in">
                     <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].left }}</span>
-                </transition>比<transition name="slide" mode="out-in">
+                </transition><span>比</span><transition name="slide" mode="out-in">
                     <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].middle }}</span>
-                </transition>更<transition name="slide" mode="out-in">
+                </transition><span>更</span><transition name="slide" mode="out-in">
                     <span :key="currentIndex" class="text-part">{{ textParts[currentIndex].right }}</span>
                 </transition>
             </div>
@@ -76,21 +76,21 @@ onBeforeUnmount(() => {
     .home-banner {
         width: 100%;
         height: 400px;
-        background: linear-gradient(135deg, #c850c0, #4158d0);
-        background-size: cover;
-        background-position: center;
+        background: linear-gradient(to top, #B1EAFB, #4158d0);
         color: #FFF;
         font-size: 4rem;
         font-weight: 700;
         font-family: "Google Sans", arial, sans-serif;
         display: flex;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;  // 文字居中
         @media (max-width: 768px) {
             height: 200px;
             font-size: 2rem;
+            .text-part {
+                margin: 0 -20px;
+            }
         }
     }
 

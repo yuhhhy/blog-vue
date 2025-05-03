@@ -55,7 +55,12 @@ onUpdated(() => {
 
         p {
             margin-bottom: 1.2em;
-            font-size: 16px;
+            font-size: 1rem;
+        }
+
+        p[align="center"] {
+            font-size: 0.8rem;
+            color: var(--quote-color);
         }
 
         ul, ol {
@@ -71,6 +76,7 @@ onUpdated(() => {
         a {
             color: var(--skyblue);
             text-decoration: none;
+            word-break: break-word;  // 文字折行
             &:hover {
                 text-decoration: underline;
             }

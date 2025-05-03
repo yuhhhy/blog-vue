@@ -63,10 +63,13 @@ watch(() => route.params.tagName, () => {
 .container {
     padding-left: 40px;
     padding-top: 50px;
-
     :deep(.timeline-item__title){
         font-size: 1rem;
 
+    }
+    @media screen and (max-width: 768px)  {
+      padding-top: 40px;
+      padding-left: 20px;
     }
 }
 </style>

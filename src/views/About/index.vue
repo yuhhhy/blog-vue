@@ -32,11 +32,11 @@ const htmlContent = `
 
 <style lang="scss" scoped>
 .about {
+    min-height: calc(100vh - 75px);
     background-color: var(--light);
     margin-top: 64px;
     padding: 40px calc(7vw + 10px);
     display: flex;
-    height: 100%;
 
     .about-article {
         background-color: var(--white);

@@ -40,13 +40,16 @@ import TagList from './components/TagList.vue';
 @media (max-width: 768px) {
     .archive-container{
         background-color: var(--white);
-        .archive-list{
-            padding: 0;
-            flex-direction: column;
-            .archive-list {
-                margin-right: 0;
-                margin-bottom: 20px;
-                border-radius: 0;
+        .archive-main {
+            padding: 20px 10px;
+            .archive-list{
+                padding: 0;
+                flex-direction: column;
+                .archive-list {
+                    margin-right: 0;
+                    margin-bottom: 20px;
+                    border-radius: 0;
+                }
             }
         }
     }

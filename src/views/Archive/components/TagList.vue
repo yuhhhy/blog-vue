@@ -36,6 +36,10 @@ onMounted(async () => {
     flex-wrap: wrap;
     row-gap: 20px;
 
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+
     .tag {
         color: var(--white);
         background-color: var(--blue);

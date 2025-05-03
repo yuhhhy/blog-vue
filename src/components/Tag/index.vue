@@ -11,7 +11,7 @@ const props = defineProps({
     <RouterLink to="#">
         <div class="tag">
              <!-- 用v-html把{{ '&#xe632;' }}变成{{ &#xe632; }} -->
-            <div class="iconfont tag-img" style="font-size: 56px;" v-html="props.tag.tagImg"></div>
+            <div class="iconfont tag-img" style="font-size: 38.5px;" v-html="props.tag.tagImg"></div>
             <div class="tag-info">
                 <div class="tag-info-left">
                     <div class="tag-name">{{ tag.tagName }}</div>
@@ -21,7 +21,7 @@ const props = defineProps({
                             <el-progress 
                                 :percentage="tag.tagProgress" 
                                 :text-inside="true" 
-                                :stroke-width="8" 
+                                :stroke-width="5" 
                                 :show-text="false"
                                 :color="tag.progressColor"
                             />
@@ -48,23 +48,23 @@ const props = defineProps({
 
     &:hover {
         .tag-img {
-            transform: translateX(110px);
+            transform: translateX(115px);
             transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
                 
         }
         .tag-info {
-            transform: translateX(110px);
+            transform: translateX(115px);
             opacity: 0;
             transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         }
         .black-box {
-            transform: translateX(110px);
+            transform: translateX(115px);
             transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
         }
     }
     .tag-img {
-        height: 80%;
-        width: 56px;
+        height: 55%;
+        width: 38.5px;
         border-radius: 4px;
         object-fit: cover;  // 保持图片比例
     }

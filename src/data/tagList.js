@@ -2,41 +2,41 @@ export default [
     {
         tagImg: '&#xe632;',
         tagName: 'HTML',
-        tagHours: 100,
-        tagProgress: 90,
-        tagNumber: 19,
-        progressColor: '#03A7FA'
+        tagHours: 0,
+        tagProgress: 60,
+        tagNumber: 0,
+        progressColor: '#FC490B'
     },
     {
         tagImg: '&#xe61e;',
         tagName: 'CSS',
-        tagHours: 99,
-        tagProgress: 78,
-        tagNumber: 10,
-        progressColor: '#E101FB'
+        tagHours: 0,
+        tagProgress: 60,
+        tagNumber: 0,
+        progressColor: '#2196F3'
     },
     {
         tagImg: '&#xe704;',
         tagName: 'JavaScript',
-        tagHours: 66,
-        tagProgress: 60,
+        tagHours: 0,
+        tagProgress: 50,
         tagNumber: 1,
-        progressColor: '#FD9E02'
+        progressColor: '#F5DD1E'
     },
     {
         tagImg: '&#xe79a;',
         tagName: 'Vue',
-        tagHours: 65,
-        tagProgress: 55,
-        tagNumber: 3,
-        progressColor: '#8ED320'
+        tagHours: 0,
+        tagProgress: 40,
+        tagNumber: 0,
+        progressColor: '#41B883'
     },
       {
         tagImg: '&#xe799;',
         tagName: 'Webpack',
-        tagHours: 2,
-        tagProgress: 25,
-        tagNumber: 2,
-        progressColor: '#FD9E02'
+        tagHours: 0,
+        tagProgress: 2,
+        tagNumber: 0,
+        progressColor: '#8ED6FB'
     },
 ]

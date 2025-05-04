@@ -6,6 +6,8 @@
 - Element-Plus
 - Vite
 
+### 部署
+- Vercel
 
 ## 实现功能
 ### 整体

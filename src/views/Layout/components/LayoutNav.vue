@@ -1,14 +1,22 @@
 <script setup>
+import { onMounted } from 'vue'
 import { useWindowScroll } from '@vueuse/core'
-import { ref } from 'vue'
+import { useThemeStore } from '@/stores/themeStore.js'
 
 const { y } = useWindowScroll()
-const darkMode = ref(false)
-
-const toggleDarkMode = () => {
-  darkMode.value = !darkMode.value
-  document.documentElement.classList.toggle('dark', darkMode.value)
+const themeStore = useThemeStore()
+ 
+const toggleTheme = () => {
+    document.documentElement.classList.remove(themeStore.theme)
+    themeStore.toggleTheme();
+    document.documentElement.classList.add(themeStore.theme)
 }
+
+onMounted(() => {
+    // document.documentElement 指向根元素 <html>
+    document.documentElement.classList.add(themeStore.theme)
+})
+
 </script>
 
 <template>
@@ -18,8 +26,8 @@ const toggleDarkMode = () => {
             <RouterLink to="/archive">归档</RouterLink>
             <RouterLink to="/about">关于</RouterLink>
         </div>
-        <button @click="toggleDarkMode" class="theme-toggle">
-            <span class="iconfont themeIcon" v-if="!darkMode">&#xe886;</span>
+        <button @click="toggleTheme" class="theme-toggle">
+            <span class="iconfont themeIcon" v-if="themeStore.theme === 'light'">&#xe886;</span>
             <span class="iconfont themeIcon" v-else style="color: #fff;">&#xea26;</span>
         </button>
         <div class="el-drop-down">

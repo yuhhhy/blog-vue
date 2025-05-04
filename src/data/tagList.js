@@ -10,15 +10,15 @@ export default [
     {
         tagImg: '&#xe61e;',
         tagName: 'CSS',
-        tagHours: 0,
+        tagHours: 2,
         tagProgress: 60,
-        tagNumber: 0,
+        tagNumber: 1,
         progressColor: '#2196F3'
     },
     {
         tagImg: '&#xe704;',
         tagName: 'JavaScript',
-        tagHours: 0,
+        tagHours: 4,
         tagProgress: 50,
         tagNumber: 1,
         progressColor: '#F5DD1E'

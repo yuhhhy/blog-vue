@@ -11,10 +11,23 @@ const { y } = useWindowScroll()
             <RouterLink to="/archive">归档</RouterLink>
             <RouterLink to="/about">关于</RouterLink>
         </div>
+        <div class="el-drop-down">
+            <el-dropdown placement="top-start">
+                <span class="iconfont">&#xe61b;</span>
+                <template #dropdown>
+                    <el-dropdown-menu>
+                        <el-dropdown-item><RouterLink to="/home">主页</RouterLink></el-dropdown-item>
+                        <el-dropdown-item><RouterLink to="/archive">归档</RouterLink></el-dropdown-item>
+                        <el-dropdown-item><RouterLink to="/about">关于</RouterLink></el-dropdown-item>
+                    </el-dropdown-menu>
+                </template>
+            </el-dropdown>
+        </div>
     </div>
     <!-- 回到顶部 -->
     <el-backtop :right="16" :bottom="100" style="color: var(--white); background-color: rgba(88, 183, 255, 0.8)" />
 </template>
+
 <style lang="scss" scoped>
 .nav {
     background-color: var(--white);
@@ -27,11 +40,14 @@ const { y } = useWindowScroll()
     z-index: 1000;
 
     .nav-links {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        gap: 50px;
+        display: none;
+        @media (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 50px;
+        }
     }
 
     a {
@@ -42,6 +58,20 @@ const { y } = useWindowScroll()
         }
         &.active {
             color: var(--blue);
+        }
+    }
+
+    .el-drop-down {
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            position: absolute;
+            top: 22px;
+            right: 30px;
+        }
+
+        .iconfont {
+            font-size: 15px;
         }
     }
 }

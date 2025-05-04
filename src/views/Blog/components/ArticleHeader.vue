@@ -58,7 +58,6 @@ defineProps(['blogData'])
             gap: 5px;
             font-size: 0.875rem;
             color: var(--quote-color);
-            cursor: pointer;
             transition: all 0.3s;
 
             .iconfont {

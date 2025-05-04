@@ -90,6 +90,10 @@ onMounted(async () => {
                 overflow: hidden;
                 background-color: var(--white);
                 min-width: 400px;
+                &:hover {
+                    box-shadow: 0 0 10px var(--lake);
+                    transition: 0.4s;
+                }
 
                 @media (max-width: 768px) {
                     min-width: 100%;

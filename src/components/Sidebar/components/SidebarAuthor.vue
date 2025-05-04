@@ -70,7 +70,6 @@
     }
 
     #author-words {
-        font-family: var(--font-serif);
         text-align: center;
         max-width: 100%;
         word-wrap: break-word; // 长单词断行

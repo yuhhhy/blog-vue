@@ -42,7 +42,7 @@ watch(() => route.params.tagName, () => {
     <el-timeline style="max-wipx" class="timeline">
       <!-- 有路由参数时显示 -->
       <el-timeline-item 
-        v-if="route.params.tagName" 
+        v-if="route.params.tagName && postsByTag.length" 
         v-for="item in postsByTag" 
         :timestamp="item.date" 
         type="primary" 
@@ -52,6 +52,9 @@ watch(() => route.params.tagName, () => {
           <span class="timeline-item__title">{{ item.title }}</span>
         </RouterLink>
       </el-timeline-item>
+
+      <!-- 有路由参数但没有对应文章时显示 -->
+      <div v-else-if="route.params.tagName && !postsByTag.length" class="noPosts">很抱歉，还没有这类文章……</div>
 
       <!-- 无路由参数时显示 -->
       <el-timeline-item 
@@ -74,6 +77,14 @@ watch(() => route.params.tagName, () => {
 .container {
     padding-left: 40px;
     padding-top: 50px;
+
+    .timeline {
+      .noPosts {
+       font-size: 1rem;
+       color: var(--black);
+     }
+    }
+
     :deep(.timeline-item__title){
       font-size: 1rem;
       color: var(--black);

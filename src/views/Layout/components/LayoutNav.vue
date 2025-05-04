@@ -24,7 +24,7 @@ const toggleDarkMode = () => {
         </button>
         <div class="el-drop-down">
             <el-dropdown placement="top-start">
-                <span class="iconfont">&#xe61b;</span>
+                <span class="iconfont drop-down-icon">&#xe61b;</span>
                 <template #dropdown>
                     <el-dropdown-menu>
                         <el-dropdown-item><RouterLink to="/home">主页</RouterLink></el-dropdown-item>
@@ -82,6 +82,7 @@ const toggleDarkMode = () => {
         }
 
         .iconfont {
+            color: var(--black);
             font-size: 15px;
         }
     }

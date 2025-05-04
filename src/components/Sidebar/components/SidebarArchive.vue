@@ -27,6 +27,7 @@ onMounted(async () => {
 
 <template>
     <div class="sidebar-archive">
+        <div class="sidebar-archive-title">⇨ 文章归档 ⇦</div>
         <RouterLink 
             v-for="(posts, date) in postsDividedByMonth" 
             :key="date" 
@@ -42,7 +43,6 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .sidebar-archive {
-    font-family: var(--font-serif);
     background-color: var(--white);
     color: var(--light-dark);
     margin-bottom: 20px;
@@ -54,7 +54,15 @@ onMounted(async () => {
         box-shadow: 0 0 10px var(--skyblue);
         transition: 0.4s;
     }
-
+    .sidebar-archive-title {
+        color: var(--blue);
+        font-family: var(--font-sans);
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
     .archive-month {
         cursor: pointer;
         height: 50px;

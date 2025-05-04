@@ -43,7 +43,7 @@ const props = defineProps({
     height: 70px;
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    padding-left: 5px;
     position: relative;
     font-size: 0.875rem;
 

@@ -83,13 +83,14 @@ onUpdated(() => {
         }
 
         code {
-            background: var(--light);
+            background: #f5f5fa; 
+            color: #444444;
             padding: 0.2em 0.4em;
             border-radius: 3px;
         }
 
         pre {
-            background: var(--light);
+            background: #f5f5fa; 
             padding: 1em;
             border-radius: 5px;
             overflow-x: auto;

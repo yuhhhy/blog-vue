@@ -42,6 +42,7 @@ const currentComponent = computed(() => {
 
 <style lang="scss" scoped>
 .sidebar {
+    font-family: var(--font-serif);
     display: flex;
     flex-direction: column;
     width: 300px;

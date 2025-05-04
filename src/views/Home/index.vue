@@ -1,9 +1,8 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, onMounted } from 'vue'
 import Sidebar from '@/components/Sidebar/index.vue'
 
 const blogList = ref([])
-
 
 onMounted(async () => {
   const response = await fetch('/data/posts.json')

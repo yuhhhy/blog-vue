@@ -29,6 +29,8 @@ onUpdated(() => {
     color: var(--light-dark);
 
     .markdown-content {
+        position: relative;
+
         h1 {
             font-size: 2em;
         }
@@ -51,6 +53,15 @@ onUpdated(() => {
             color: var(--sapphire);
             margin: 1.5em 0 0.8em;
             font-weight: 600;
+
+            a {
+                display: none;
+            }
+            &:hover {
+                a {
+                    display: inline;
+                }
+            }
         }
 
         p {

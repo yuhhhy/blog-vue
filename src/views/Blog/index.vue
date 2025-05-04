@@ -180,6 +180,7 @@ img {
         .blog-header {
             .banner {
                 height: 200px;
+                background-attachment: scroll;  // 移动端取消fixed效果
             }
             .mask {
                 height: 200px;

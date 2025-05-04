@@ -4,7 +4,7 @@
 <template>
     <div class="sidebar-author">
         <div class="author-avatar">
-            <img src="@/assets/images/avatar.png" alt="my avatar">
+            <img src="@/assets/images/avatar_compress.jpg" alt="my avatar">
         </div>
         <span id="author-name">一曝十寒</span>
         <div id="author-words">

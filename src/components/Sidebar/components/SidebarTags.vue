@@ -11,10 +11,15 @@ import tagList from '@/data/tagList.js'
 
 <style lang="scss" scoped>
 .sidebar-tags {
-    background-color: #FFF;
+    background-color: var(--white);
+    color: var(--black);
     margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
-    width: 100%;           
+    width: 100%;
+    &:hover {
+        box-shadow: 0 0 10px var(--orange);
+        transition: 0.4s;
+    }
 }
 </style>

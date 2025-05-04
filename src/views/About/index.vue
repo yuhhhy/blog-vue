@@ -30,8 +30,9 @@ const htmlContent = `
 
 <style lang="scss" scoped>
 .about {
-    min-height: calc(100vh - 75px);
     background-color: var(--light);
+    color: var(--black);
+    min-height: calc(100vh - 75px);
     margin-top: 64px;
     padding: 40px calc(7vw + 10px);
     display: flex;

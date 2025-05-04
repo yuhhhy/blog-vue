@@ -1,7 +1,14 @@
 <script setup>
 import { useWindowScroll } from '@vueuse/core'
+import { ref } from 'vue'
 
 const { y } = useWindowScroll()
+const darkMode = ref(false)
+
+const toggleDarkMode = () => {
+  darkMode.value = !darkMode.value
+  document.documentElement.classList.toggle('dark', darkMode.value)
+}
 </script>
 
 <template>
@@ -11,6 +18,10 @@ const { y } = useWindowScroll()
             <RouterLink to="/archive">归档</RouterLink>
             <RouterLink to="/about">关于</RouterLink>
         </div>
+        <button @click="toggleDarkMode" class="theme-toggle">
+            <span class="iconfont themeIcon" v-if="!darkMode">&#xe886;</span>
+            <span class="iconfont themeIcon" v-else style="color: #fff;">&#xea26;</span>
+        </button>
         <div class="el-drop-down">
             <el-dropdown placement="top-start">
                 <span class="iconfont">&#xe61b;</span>
@@ -67,17 +78,30 @@ const { y } = useWindowScroll()
             display: block;
             position: absolute;
             top: 22px;
-            right: 30px;
+            left: 30px;
         }
 
         .iconfont {
             font-size: 15px;
         }
     }
+    .themeIcon {
+        position: absolute;
+        top: 22px;
+        right: 30px;
+    }
 }
 .unshow {
     transform: translateY(-100%);
     opacity: 0;
     transition: transform 0.3s ease-in-out;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0 10px;
 }
 </style>

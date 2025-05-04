@@ -49,7 +49,7 @@ watch(() => route.params.tagName, () => {
         class="timeline-item"
       >
         <RouterLink :to="item.link" class="timeline-item__link">    
-          <span  class="timeline-item__title">{{ item.title }}</span>
+          <span class="timeline-item__title">{{ item.title }}</span>
         </RouterLink>
       </el-timeline-item>
 
@@ -75,7 +75,8 @@ watch(() => route.params.tagName, () => {
     padding-left: 40px;
     padding-top: 50px;
     :deep(.timeline-item__title){
-        font-size: 1rem;
+      font-size: 1rem;
+      color: var(--black);
     }
     :deep(.el-timeline-item__node){
       background-color: var(--cyan);

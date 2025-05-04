@@ -15,14 +15,28 @@
 
 <style lang="scss" scoped>
 .blog-tags {
+    background-color: var(--white);
+    color: var(--dark);
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    &:hover {
+        box-shadow: 0 0 10px var(--gold);
+        transition: 0.4s;
+    }
+
 
     .tag {
+        border-radius: 5px;
         padding: 5px 10px;
         &::before {
             content: '# ';
+        }
+        &:hover {
+            background-color: var(--blue);
+            color: white;
         }
     }
 }

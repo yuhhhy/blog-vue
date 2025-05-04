@@ -43,12 +43,17 @@ onMounted(async () => {
 <style lang="scss" scoped>
 .sidebar-archive {
     font-family: var(--font-serif);
+    background-color: var(--white);
+    color: var(--light-dark);
     margin-bottom: 20px;
     border-radius: 10px;
-    background-color: var(--white);
     width: 100%;
     padding: 16px 20px;
     overflow: hidden;
+    &:hover {
+        box-shadow: 0 0 10px var(--skyblue);
+        transition: 0.4s;
+    }
 
     .archive-month {
         cursor: pointer;
@@ -58,6 +63,7 @@ onMounted(async () => {
         position: relative;
         display: flex;
         align-items: center;
+        border-radius: 10px;
 
         .number {
             position: absolute;
@@ -68,14 +74,18 @@ onMounted(async () => {
         }
 
         &:hover {
-            background-color: var(--light);
+            background-color: var(--blue);
+            border: 1px solid var(--border-color);
+            color: white;
+
+            .number {
+                color: white;
+            }
         }
     
         &.active {
             background-color: var(--blue);
-            color: white;
-            border-radius: 4px;
-            
+            color: white;            
             .number {
                 color: white;
             }

@@ -27,16 +27,21 @@
 
 <style lang="scss" scoped>
 .sidebar-author {
+    background-color: var(--white);
+    color: var(--light-dark);
     min-height: 300px;
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
+    &:hover {
+        box-shadow: 0 0 10px var(--grape);
+        transition: 0.4s;
+    }
 
     .author-avatar {
         width: 100px;

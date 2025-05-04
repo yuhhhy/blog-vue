@@ -22,6 +22,7 @@ import TagList from './components/TagList.vue';
 <style lang="scss" scoped>
 .archive-container {
     background-color: var(--light);
+    color: var(--black);
     margin-top: 64px;
     min-height: calc(100vh - 75px);
     

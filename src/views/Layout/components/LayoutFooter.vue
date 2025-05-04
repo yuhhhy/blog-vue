@@ -18,6 +18,7 @@ import { RouterLink } from 'vue-router';
 <style lang="scss" scoped>
 .footer-info {
     background-color: var(--white);
+    color: var(--black);
     width: 100%;
     height: 64px;
     display: flex;

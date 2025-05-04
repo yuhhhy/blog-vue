@@ -104,7 +104,7 @@ onMounted(async () => {
     
                 .blog-intro {
                     padding: 0 20px;
-    
+                    color: var(--black);
                     .blog-time-tags {
                         color: var(--quote-color);
                         font-size: 0.875rem;

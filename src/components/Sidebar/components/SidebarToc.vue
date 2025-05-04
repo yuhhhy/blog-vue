@@ -17,14 +17,18 @@ defineProps({
 
 <style lang="scss" scoped>
 .toc {
-    position: sticky;
-    top: 84px; // 必须指定top/left/right/bottom值
+    background-color: var(--white);
+    color: var(--dark);
     height: fit-content;
     width: 100%;
     padding-top: 20px;
-    background-color: var(--white); // 背景颜色
-    border-radius: 10px; // 圆角
-    z-index: 1; // 层级
+    border-radius: 10px;
+    position: sticky;
+    top: 84px; // 必须指定top/left/right/bottom值
+
+    &:hover {
+        box-shadow: 0 0 10px var(--cyan);
+    }
 
     .toc-header {
         margin-left: 30px;
@@ -45,6 +49,7 @@ defineProps({
         li {
             margin-bottom: 0.6em;
             list-style-position: outside;
+            list-style: none;
         }
     }
 }

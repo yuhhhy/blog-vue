@@ -38,6 +38,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .tag {
+    color: var(--quote-color);
     width: 100%;
     height: 70px;
     display: flex;
@@ -73,7 +74,7 @@ const props = defineProps({
         height: 100%;
         display: flex;
         padding-left: 10px;
-        border-bottom: 1px solid #F5F5FA;
+        border-bottom: 1px solid var(--light);
 
         .tag-info-left {
             flex: 1;

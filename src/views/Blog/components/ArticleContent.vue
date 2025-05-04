@@ -26,7 +26,7 @@ onUpdated(() => {
     line-height: 1.8;
     padding-bottom: 50px;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    color: var(--dark);
+    color: var(--light-dark);
 
     .markdown-content {
         h1 {

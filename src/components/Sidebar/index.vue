@@ -15,9 +15,8 @@ const props = defineProps(['tags','tocHtml'])
 const currentComponent = computed(() => {
     if (route.path.startsWith('/blog/')) {
         return [
-            { component: SidebarAuthor },
-            { component: SidebarBlogTags, props: { tags: props.tags } },
             { component: SidebarArchive },
+            { component: SidebarBlogTags, props: { tags: props.tags } },
             { component: SidebarToc, props: { tocHtml: props.tocHtml } }
         ];
     } else {

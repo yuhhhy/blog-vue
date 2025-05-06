@@ -34,7 +34,6 @@ const themeStore = useThemeStore();
     background-color: var(--white);
     color: var(--light-dark);
     min-height: 300px;
-    margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
     display: flex;

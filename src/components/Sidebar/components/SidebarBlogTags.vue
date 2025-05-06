@@ -20,7 +20,6 @@
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 20px;
     border-radius: 10px;
     &:hover {
         box-shadow: 0 0 10px var(--gold);

@@ -45,7 +45,6 @@ onMounted(async () => {
 .sidebar-archive {
     background-color: var(--white);
     color: var(--light-dark);
-    margin-bottom: 20px;
     border-radius: 10px;
     width: 100%;
     padding: 16px 20px;

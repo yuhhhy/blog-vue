@@ -11,7 +11,7 @@ const props = defineProps({
     <RouterLink :to="`/archive/${tag.tagName}`">
         <div class="tag">
              <!-- 用v-html把{{ '&#xe632;' }}变成{{ &#xe632; }} -->
-            <div class="iconfont tag-img" style="font-size: 38.5px;" v-html="props.tag.tagImg"></div>
+            <div class="iconfont tag-img" style="font-size: 38.5px;" v-html="tag.tagImg"></div>
             <div class="tag-info">
                 <div class="tag-info-left">
                     <div class="tag-name">{{ tag.tagName }}</div>

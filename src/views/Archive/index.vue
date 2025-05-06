@@ -1,6 +1,14 @@
 <script setup>
 import Sidebar from '@/components/Sidebar/index.vue'
 import TagList from './components/TagList.vue';
+import { ref } from 'vue'
+
+const posts = ref([])
+
+fetch('/data/posts.json').then(response => response.json()).then(posts => {
+    posts.value = posts;
+})
+
 </script>
 
 <template>
@@ -9,7 +17,7 @@ import TagList from './components/TagList.vue';
         <!-- 归档页面文章列表 -->
         <div class="archive-list">
             <!-- 归档页面标签列表 -->
-            <TagList></TagList>
+            <TagList :posts="posts"></TagList>
             <!-- 路由决定不同排序方式 -->
             <RouterView></RouterView>
         </div>

@@ -36,6 +36,7 @@ const currentComponent = computed(() => {
             :is="item.component"
             :key="index"
             v-bind="item.props || {}"
+            class="sidebar-item"
         />
     </div>
 </template>
@@ -49,6 +50,10 @@ const currentComponent = computed(() => {
     min-width: 280px;
     height: 100%;
     margin-left: 40px;
+
+    .sidebar-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 768px){
     .sidebar {

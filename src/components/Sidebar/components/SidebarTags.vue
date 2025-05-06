@@ -14,7 +14,6 @@ import tagList from '@/data/tagList.js'
 .sidebar-tags {
     background-color: var(--white);
     color: var(--black);
-    margin-bottom: 20px;
     border-radius: 10px;
     overflow: hidden;
     width: 100%;

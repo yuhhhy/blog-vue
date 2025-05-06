@@ -22,16 +22,17 @@ defineProps({
     height: fit-content;
     width: 100%;
     padding-top: 20px;
+    padding-bottom: 20px;
     border-radius: 10px;
     position: sticky;
     top: 84px; // 必须指定top/left/right/bottom值
 
     &:hover {
-        box-shadow: 0 0 10px var(--cyan);
+        box-shadow: 0 0 6px var(--cyan);
     }
 
     .toc-header {
-        margin-left: 30px;
+        padding-left: 20px;
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 10px;
@@ -40,7 +41,6 @@ defineProps({
         color: var(--skyblue);
         font-size: 0.9rem;
         line-height: 1.5;
-        margin-bottom: 20px;
     }
     :deep(ul), :deep(ol) {
         padding-left: 2em;

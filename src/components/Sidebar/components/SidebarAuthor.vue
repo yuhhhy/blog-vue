@@ -42,7 +42,7 @@ const themeStore = useThemeStore();
     justify-content: center;
     gap: 30px;
     &:hover {
-        box-shadow: 0 0 10px var(--grape);
+        box-shadow: 0 0 6px var(--grape);
         transition: 0.4s;
     }
 
@@ -54,7 +54,7 @@ const themeStore = useThemeStore();
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 0 10px var(--grape);
+        box-shadow: 0 0 5px var(--grape);
 
         &:hover {
             transform: scale(1.05);

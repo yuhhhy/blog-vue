@@ -19,7 +19,7 @@ import tagList from '@/data/tagList.js'
     width: 100%;
     padding: 10px;
     &:hover {
-        box-shadow: 0 0 6px var(--orange);
+        box-shadow: 0 0 6px var(--cyan);
         transition: 0.4s;
     }
     .sidebar-tags-title {

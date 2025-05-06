@@ -4,12 +4,14 @@ import SidebarArchive from './components/SidebarArchive.vue';
 import SidebarTags from './components/SidebarTags.vue';
 import SidebarToc from './components/SidebarToc.vue';
 import SidebarBlogTags from './components/SidebarBlogTags.vue';
+import SidebarWebsiteInfo from './components/SidebarWebsiteInfo.vue';
 
 import { computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute();
 const props = defineProps(['tags','tocHtml'])
+
 
 // 根据路由动态加载组件
 const currentComponent = computed(() => {
@@ -23,10 +25,13 @@ const currentComponent = computed(() => {
         return [
             { component: SidebarAuthor },
             { component: SidebarArchive },
-            { component: SidebarTags }
+            { component: SidebarTags },
+            { component: SidebarWebsiteInfo }
         ];
     }
 })
+
+
 </script>
 
 <template>

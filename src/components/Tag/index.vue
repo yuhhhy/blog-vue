@@ -38,7 +38,6 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .tag {
-    color: var(--quote-color);
     width: 100%;
     height: 70px;
     display: flex;

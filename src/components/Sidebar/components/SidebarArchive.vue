@@ -43,14 +43,15 @@ onMounted(async () => {
 
 <style lang="scss" scoped>
 .sidebar-archive {
+    color: var(--blue);
+
     background-color: var(--white);
-    color: var(--light-dark);
     border-radius: 10px;
     width: 100%;
     padding: 16px 20px;
     overflow: hidden;
     &:hover {
-        box-shadow: 0 0 6px var(--skyblue);
+        box-shadow: 0 0 6px var(--light-blue);
         transition: 0.4s;
     }
     .sidebar-archive-title {
@@ -74,7 +75,6 @@ onMounted(async () => {
             right: 20px;
             top: 20px;
             font-size: 14px;
-            color: var(--quote-color);
         }
 
         &:hover {

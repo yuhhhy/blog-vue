@@ -14,12 +14,14 @@
     // 固定色
     --skyblue: #3498db;
     --blue: #409eff;
+    --light-blue: #51c7f9;
+    --lake: #A7CAFD;
     --red: #ff4757;
     --orange: #ffa502;
-    --cyan: #1abc9c;
-    --grape: #c850c0;
     --gold: #ffff18;
-    --lake: #A7CAFD;
+    --cyan: #68aa9d;
+    --grape: #c850c0;
+    --lavender: #c792ff;
 }
 
 :root.dark {
@@ -38,10 +40,12 @@
     // 固定色
     --skyblue: #3498db;
     --blue: #409eff;
+    --light-blue: #51c7f9;
+    --lake: #A7CAFD;
     --red: #ff4757;
     --orange: #ffa502;
-    --cyan: #1abc9c;
+    --gold: #ffff18;
+    --cyan: #68aa9d;
     --grape: #c850c0;
-    --gold: #ffcc00;
-    --lake: #A7CAFD;
+    --lavender: #c792ff;
 }

@@ -1,5 +1,17 @@
 [
   {
+    "title": "数字时代的注意力漂流记​",
+    "author": "一曝十寒",
+    "coverImage": "/images/attention-4.jpg",
+    "date": "2025-05-07",
+    "tags": [
+      "生活成长"
+    ],
+    "id": 2,
+    "link": "/blog/2",
+    "wordCount": 1417
+  },
+  {
     "title": "怎么实现一个颜色渐变的输入框边框？",
     "author": "一曝十寒",
     "coverImage": "/images/border-gradient-1.jpg",
@@ -19,8 +31,8 @@
     "tags": [
       "JavaScript"
     ],
-    "id": 2,
-    "link": "/blog/2",
+    "id": 3,
+    "link": "/blog/3",
     "wordCount": 2123
   },
   {

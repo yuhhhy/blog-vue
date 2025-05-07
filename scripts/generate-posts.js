@@ -26,24 +26,15 @@ const posts = files.map(file => {
   if (!data.link) data.link = `/blog/${data.id}`
   // 字数统计
   if (!data.wordCount){
-    let iTotal = 0 // 汉字数
     let eTotal = 0 // 字母数
-    let nTotal = 0 // 数字数
     let sTotal = 0 // 空格数
-    let oTotal = 0 // 其他字符数
     let str = content
     for (let i = 0; i < str.length; i++) {
       let c = str.charAt(i)
-      if (/[\u4e00-\u9fa5]/.test(c)) { // 匹配中文字符
-        iTotal++
-      } else if (/[a-zA-Z]/.test(c)) { // 匹配英文字符
+      if (/[a-zA-Z]/.test(c)) {
         eTotal++
-      } else if (/[0-9]/.test(c)) { // 匹配数字
-        nTotal++
-      } else if (/\s+/.test(c)) { // 匹配空白符
+      } else if (/\s+/.test(c)) {
         sTotal++
-      } else { // 匹配标点和其他字符
-        oTotal++
       }
     }
     let wTotal = 0 // 英文单词数

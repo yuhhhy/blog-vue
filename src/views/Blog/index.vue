@@ -1,6 +1,6 @@
 <script setup>
 import MarkdownIt from 'markdown-it'
-import markdownItTocAndAnchor from "markdown-it-toc-and-anchor"
+import markdownItTocAndAnchor from 'markdown-it-toc-and-anchor'
 import Sidebar from '@/components/Sidebar/index.vue'
 import ArticleHeader from './components/ArticleHeader.vue'
 import ArticleContent from './components/ArticleContent.vue'
@@ -32,7 +32,7 @@ const fetchBlogContent = async () => {
   const response = await fetch(`/processed_posts/${blogData.value.title}.md`)
   content.value = await response.text()
 
-  // 生成文章Toc
+  // 生成文章HTML、Toc
   const md = new MarkdownIt({
     html: true,
     linkify: true,

@@ -11,8 +11,7 @@ const themeStore = useThemeStore();
         </div>
         <span id="author-name">一曝十寒</span>
         <div id="author-words">
-            <p>你好！我是 <span style="color: var(--cyan); font-weight: 800;">一曝十寒</span></p>
-            <p>欢迎来到我的博客</p>
+            <p>欢迎来到我的博客！</p>
         </div>
         <div class="author-social">
             <a href="https://github.com/yuhhhy" target="_blank">

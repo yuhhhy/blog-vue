@@ -5,7 +5,7 @@ export default [
         tagHours: 0,
         tagProgress: 60,
         tagNumber: 0,
-        progressColor: '#FC490B'
+        progressColor: '#ff9470'
     },
     {
         tagImg: '&#xe61e;',
@@ -13,7 +13,7 @@ export default [
         tagHours: 2,
         tagProgress: 60,
         tagNumber: 1,
-        progressColor: '#2196F3'
+        progressColor: '#5cb1f6'
     },
     {
         tagImg: '&#xe704;',
@@ -21,7 +21,7 @@ export default [
         tagHours: 4,
         tagProgress: 50,
         tagNumber: 1,
-        progressColor: '#F5DD1E'
+        progressColor: '#efdf60'
     },
     {
         tagImg: '&#xe79a;',
@@ -29,7 +29,7 @@ export default [
         tagHours: 0,
         tagProgress: 40,
         tagNumber: 0,
-        progressColor: '#41B883'
+        progressColor: '#b6ed5c'
     },
       {
         tagImg: '&#xe799;',

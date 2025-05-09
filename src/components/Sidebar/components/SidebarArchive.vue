@@ -22,6 +22,7 @@ onMounted(async () => {
         acc[date].push(post)
         return acc
     }, {})
+    console.log(postsDividedByMonth.value)
 })
 </script>
 

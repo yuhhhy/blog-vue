@@ -6,7 +6,6 @@ const route = useRoute()
 const posts = ref([])
 const tags = ref([])
 const props = defineProps(['posts'])
-console.log("taglist",props.posts)
 
 // 获取当前活跃标签
 const activeTag = computed(() => {

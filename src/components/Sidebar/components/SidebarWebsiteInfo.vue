@@ -38,11 +38,11 @@ onMounted(() => {
         <span class="stat-label">文章总数</span>
       </div>
       <div class="stat-item">
-        <span class="stat-value">1,000</span>
+        <span class="stat-value">100</span>
         <span class="stat-label">访问量</span>
       </div>
     </div>
-    <div class="last-updated">最后更新: 2025-05-06</div>
+    <div class="last-updated">最后更新: 2025-05-11</div>
   </div>
 </template>
 

@@ -9,7 +9,7 @@
 
 我们都知道互联网（Internet）起源于1969年美国的阿帕网（ARPANET），它是美国国防部高级研究计划局（ARPA）与苏联在科学技术上发生“实验室冷战”的结果。美国国防部认为，如果仅有一个集中的军事指挥中心，万一这个中心被原苏联的核武器摧毁，全国的军事指挥将处于瘫痪状态，其后果不堪设想。因此有必要设计这样一个分散的指挥系统——它由一个个分散的指挥点组成，当部分指挥点被摧毁后其它点仍能正常工作，而这些分散的点又能通过某种形式的通讯网取得联系。
 
-![ARPANET](../images/arpanet.jpg)
+![ARPANET](/images/browser-1.jpg)
 
 <p align=center>1971年9月的ARPANET</p>
 
@@ -31,15 +31,15 @@ Web的核心是三个协议：
 *   超文本传输协议（Hypertext Transfer Protocol, HTTP），解决文档的快速传输
 *   超文本标记语言（Hypertext Markup Language, HTML），解决超文本文档的表示
 
-![URL](../images/url.jpg)
+![URL](/images/browser-2.jpg)
 
 <p align=center>一个 URL 的组成部分</p>
 
-![HTTP](../images/http.jpg)
+![HTTP](/images/browser-3.jpg)
 
 <p align=center>HTTP 的拆分</p>
 
-![HTML](../images/html.png)
+![HTML](/images/browser-4.png)
 
 <p align=center>HTML 元素剖析</p>
 
@@ -62,7 +62,7 @@ Web的核心是三个协议：
 
 1990年，Tim Berners-Lee 开发了第一个浏览器 “WorldWideWeb”（后来为避免与万维网重名更名 Nexus），第一个万维网服务器“httpd”，和第一个网站 [info.cern.ch](https://link.zhihu.com/?target=http%3A//info.cern.ch/) 。
 
-![browser_www](../images/browser_www.jpg)
+![browser_www](/images/browser-5.jpg)
 
 他同时基于底层协议（TCP/IP）和早期网络协议（FTP、SMTP）创造了超文本传输协议（HTTP），根据超文本系统（NLS、HyperCard）和标记语言（GML、SGML）设计了超文本标记语言（HTML），根据文件系统的路径结构、域名系统（DNS）等设计了统一资源定位符（URL）。这些构成了如今 Web 与 浏览器必不可少的组成部分。
 
@@ -79,7 +79,7 @@ Web的核心是三个协议：
 1993年，伊利诺伊大学 NCSA（美国国家超算中心）的工作人员，开发的 Mosaic 浏览器，成为了第一个支持图片和图形界面的浏览器，在当时人气爆发地大受欢迎。
 
 
-![browser_mosaic](../images/borwser_MOSAIC.jpg)
+![browser_mosaic](/images/browser-6.jpg)
 
 <p align=center>MOSAIC 浏览器界面，已经初具今天浏览器的雏形</p>
 

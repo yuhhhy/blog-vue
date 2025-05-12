@@ -94,17 +94,47 @@ onUpdated(() => {
         }
 
         code {
-            background: #f5f5fa; 
-            color: #444444;
+            background: var(--code-background-inline);
+            color: var(--code-inline);
             padding: 0.2em 0.4em;
             border-radius: 3px;
+            text-shadow: none;
+
+            span {
+                background: none;
+                padding: 0;
+                border-radius: 0;
+
+                &.token.number {
+                    color: #357cef;
+                }
+                &.token.keyword {
+                    color: #6ba3d3;
+                }
+                &.token.function {
+                    color: #C678DD;
+                }
+                &.token.punctuation {
+                    color: #aaa;
+                }
+                &.token.string {
+                    color: #50a14f;
+                }
+            }
         }
 
         pre {
-            background: #f5f5fa; 
+            background: var(--code-background);
             padding: 1em;
             border-radius: 5px;
             overflow-x: auto;
+
+            code {
+                color: var(--code-color);
+                background: none;
+                padding: 0;
+                border-radius: 0;
+            }
         }
 
         blockquote {
